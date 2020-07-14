@@ -2,7 +2,8 @@
 namespace Classes;
 
 class CalculadoraDeImpostos {
-    public function calculaICMS(Orcamento $Orcamento){
-        return $Orcamento->getValor() * 0.5;
+    public function calcula(Orcamento $Orcamento, Imposto $imposto){
+        return $imposto->calcula($Orcamento);
     }
 }
+

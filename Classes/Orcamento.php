@@ -10,7 +10,7 @@ class Orcamento{
     }
 
     public function getValor(){
-        return $this->valor();
+        return $this->valor;
     }
 
     public function setValor($valor){
